@@ -20,7 +20,7 @@
 
 ## 上传资源：自动显示在首页
 
-1. 在 GitHub 仓库中打开 `files/`，点击 **Add file → Upload files**。
+1. 在主页仓库 `sicphd/sicphd.github.io` 中打开 `files/`，点击 **Add file → Upload files**。
 2. 上传 PDF、图片、ZIP、文本等需要公开分享的文件，提交到 `main`。
 3. 等待 **Actions → pages build and deployment** 成功。
 4. 首页 Resources 会自动列出 `files/` 下的文件，包括子目录内文件，按路径排序。无需手动修改首页链接。
@@ -31,9 +31,15 @@
 
 文件链接由浏览器决定预览或下载（PDF 通常预览、ZIP 通常下载）。需要强制保存时可右键链接选择“链接另存为”。Markdown 资源若想保留原始文本供下载，不要添加 Jekyll 的 `---` front matter。网站是静态目录，文件通过 GitHub 上传，没有网页上传后台。
 
+## Control Books 资料仓库
+
+首页 Projects 中的 **Control Books** 链接到 https://github.com/sicphd/control-book 。PID、Robust Control、System Identification 等资料继续在该仓库维护，不需要复制到主页仓库。
+
+注意：Resources 只自动列出主页仓库自身 `files/` 目录中的文件，不会扫描整个 sicphd 账号或其他仓库。向 `control-book` 上传文件会更新该仓库内容；首页保留一个稳定的 Control Books 入口，不逐个列出其中的文件。新增其他仓库时，需要在 `_data/projects.yml` 添加入口。
+
 ## 添加 Project
 
-先在 `sicphd` 账号下创建真实项目仓库并上传代码，然后编辑 `_data/projects.yml`。首次添加时，将空数组 `[]` 替换成以下结构，并将示例改成真实项目：
+先在 `sicphd` 账号下创建真实项目仓库并上传代码，然后编辑 `_data/projects.yml`。目前已有 Control Books 条目。新增项目时保留已有记录，在后面追加以下结构，并将示例改成真实项目：
 
 ```yaml
 - title: "项目名称"
@@ -42,7 +48,7 @@
   kind: "REPO"
 ```
 
-增加第二个项目时，再添加一组以 `- title:` 开头的记录。使用空格缩进，字符串加引号。`kind` 可填 `REPO`、`DEMO` 或 `DOCS`，也可省略，默认 `REPO`。如果项目有独立演示网站，`url` 可换成其真实 HTTPS 地址。不要保留示例链接。
+增加第二个项目时，再添加一组以 `- title:` 开头的记录。使用空格缩进，字符串加引号。`kind` 可填 `REPO`、`DEMO`、`DOCS` 或 `RESOURCES`，也可省略，默认 `REPO`。如果项目有独立演示网站，`url` 可换成其真实 HTTPS 地址。不要保留示例链接。
 
 项目源码建议放在各自独立仓库，主页只维护入口；发布的附件可以放 `files/项目名/`。上传图片到 `assets/images/`，正文引用真实路径，例如 `/assets/images/实际文件名.png`。
 
