@@ -1,12 +1,11 @@
-# sicphd / Resources & Projects
+# sicphd
 
-A single Home page for files, code, and future projects, with no navigation bar.
+A minimal repository list: https://sicphd.github.io/
 
-- Website: https://sicphd.github.io/
-- Repository: https://github.com/sicphd/sicphd.github.io
-- Upload resources to `files/`; the homepage lists them automatically.
-- Add project links in `_data/projects.yml`.
-- Chinese maintenance instructions: [instruction.md](instruction.md).
-- GitHub Pages: `main` branch, repository root; Jekyll, no application backend.
+The homepage lists public content repositories from the sicphd account, without navigation or resource/project categories. Website source is linked in the footer.
 
-See [LICENSE](LICENSE) and [NOTICE.md](NOTICE.md) for retained licensing information.
+Edit `_data/repositories.yml` to add, remove, or reorder entries. New repositories are not added automatically. Maintain documents and images in the linked repositories.
+
+中文维护说明：[instruction.md](instruction.md)。
+
+Built with lightweight Jekyll, HTML, and CSS; published from main through GitHub Pages. See LICENSE and NOTICE.md for licensing and attribution.

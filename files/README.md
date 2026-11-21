@@ -1,5 +1,5 @@
-# Resource files
+# Files
 
-Upload public documents and downloads into this folder. Subfolders are supported.
-Files are listed automatically on the homepage after the next GitHub Pages build.
-This README is excluded from the published website. See ../instruction.md for maintenance instructions.
+This folder is retained for existing direct file links. Its contents are no longer listed automatically on the homepage.
+
+Maintain documents in the linked content repositories. Edit _data/repositories.yml to change homepage repository links. See ../instruction.md for instructions.

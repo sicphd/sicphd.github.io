@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title != 'Home' %}{{ page.title | escape }} · {% endif %}sicphd · Resources &amp; Projects</title>
+  <title>{% if page.title != 'Home' %}{{ page.title | escape }} · {% endif %}sicphd</title>
   <meta name="description" content="{{ site.description | escape }}">
   <meta name="theme-color" content="#f6f7f4">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
-  <link rel="stylesheet" href="{{ '/assets/css/group.css' | relative_url }}?v=20261114-home-only">
+  <link rel="stylesheet" href="{{ '/assets/css/group.css' | relative_url }}?v=20261121-repositories">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <main class="wrap" id="main" tabindex="-1">{{ content }}</main>
-  <footer class="wrap"><span>© {{ 'now' | date: '%Y' }} sicphd</span><span>Resources &amp; Projects</span></footer>
+  <footer class="wrap"><span>© {{ 'now' | date: '%Y' }} sicphd</span><a href="https://github.com/sicphd/sicphd.github.io">Source</a></footer>
 </body>
 </html>
