@@ -5,7 +5,7 @@
 
 ## 当前设计
 
-只有一个首页，标题为 sicphd，下方简单罗列内容仓库，不再区分 Resources 或 Projects，不设导航。当前列出 control-book 和 IELTS-Study；网站自身的代码仓库通过页脚 Source 链接访问。
+只有一个首页，标题为 sicphd，下方简单罗列内容仓库，不再区分 Resources 或 Projects，不设导航。当前列出 control-book 和 IELTS-Study。页脚仅显示版权信息。
 
 ## 添加、删除或调整仓库
 

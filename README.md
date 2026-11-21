@@ -2,7 +2,7 @@
 
 A minimal repository list: https://sicphd.github.io/
 
-The homepage lists public content repositories from the sicphd account, without navigation or resource/project categories. Website source is linked in the footer.
+The homepage lists public content repositories from the sicphd account, without navigation or resource/project categories. The footer only shows copyright information.
 
 Edit `_data/repositories.yml` to add, remove, or reorder entries. New repositories are not added automatically. Maintain documents and images in the linked repositories.
 
